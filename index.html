@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    button {
+      padding:10px;
+      background-color:white;
+      opacity: 0.75;
+      color: #BC8F8F;
+      font-weight: bold;
+      border-width:thick;
+      margin: 2%;
+    }
+
+    .btn1 .btn2 {
+      display: inline-block;
+    }
+
+    button:hover {
+      background-color: #000000;
+      opacity: 0.5;
+      color: #ffffff;
+    }
+
+
+
+    img {
+      width: 35vw;
+      height: 35vw;
+      margin-left: 33%;
+    }
+    </style>
+  </head>
+<body style="align: center; background-color: #BC8F8F">
+  <script>
+
+function light(value)
+{
+  var pic;
+  if (value == 0){
+    pic="img/bulb_off.jpg";
+  }
+  else{
+  pic="img/bulb_on.jpg";
+}
+document.getElementById("bulb").src=pic;
+}
+
+    </script>
+  <img id="bulb" src="img/bulb_off.jpg">
+
+  <br>
+  <div style="text-align: center;">
+    <button class="btn1" onclick="light(1)">Turn On</button>
+    <button class="btn2" onclick="light(0)">Turn OFF</button>
+  </div>
+
+  </body>
+  </html>
